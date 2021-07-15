@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import Footer from '../Footer'
-import Navbar from '../Navbar'
+// import Navbar from '../Navbar'
 import './BuyInsurance.css'
 import chevloret from  '../../assets/images/chevloret6.jpg'
+import InsuranceLogo from  '../../assets/images/insuranceLogo.png'
 import { Link } from 'react-router-dom'
 
 export default class BuyInsurance extends Component {
@@ -12,7 +13,35 @@ export default class BuyInsurance extends Component {
             <div className='buy__insurance'>
                 <div className="background"></div>
                 <span className='nav__holder'>
-                    <Navbar/>
+                     <nav className="navbar clean">
+                    <div className='navbar__logo'>
+                        <Link to='/'> <img src={InsuranceLogo} alt="" /> </Link>
+                    </div>
+                    <div className='navbar__link'>
+                        <ul className='navbar__ul'>
+                            <li className='navbar__item'>
+                                <Link  className='navbar__link whites'>Home</Link>
+                            </li>
+                            <li className='navbar__item'>
+                                <Link  className='navbar__link whites'>Manage</Link>
+                            </li>
+                            <li className='navbar__item'>
+                                <Link  className='navbar__link whites'>Buy</Link>
+                            </li>
+                            <li className='navbar__item'>
+                                <Link  className='navbar__link whites'>About Us</Link>
+                            </li>
+                            <li className='navbar__item'>
+                                <Link  className='navbar__link whites'>Contact Us</Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="navbar__signin">
+                        <button className="sign__btn">
+                            <Link to='/login'>Sign In</Link>
+                        </button>
+                    </div>
+                </nav>
                 </span>
                 <div className='insurance__text'>
                     <h1>Buy Insurance</h1>
