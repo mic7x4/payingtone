@@ -1,0 +1,62 @@
+.MuiStepIcon-root.MuiStepIcon-active {
+  color: rgba(30, 142, 151, 0.95) !important;
+}
+.MuiStepIcon-root.MuiStepIcon-completed {
+  color: #757575 !important;
+}
+.MuiPaper-root.MuiStepper-root {
+  width: 85%;
+  background-color: transparent;
+}
+input[type="file"] {
+  opacity: 0;
+}
+.stepper__btn {
+  display: flex;
+  justify-content: center;
+}
+.form__group {
+  display: flex;
+  background: rgba(24, 144, 255, 0.03);
+  border-radius: 10px;
+  width: 493px;
+  height: 40px;
+  align-items: center;
+  padding: 27px;
+  margin-bottom: 16px;
+}
+.form__control {
+  outline: none;
+  border: none;
+  background: none;
+  width: 100%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  color: #626262;
+  padding-left: 10px;
+}
+.details {
+  color: rgba(9, 83, 94, 0.92);
+}
+.steeper__cta {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.steeper__cta .MuiButtonBase-root {
+  background: #1e8e97;
+  color: white !important;
+  width: 200px;
+  height: 60px;
+}
+.next {
+  border-radius: "0px 25px 25px 0px" !important;
+}
+.passwd {
+  cursor: pointer;
+}
