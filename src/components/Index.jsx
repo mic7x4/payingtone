@@ -28,7 +28,7 @@ export default class Index extends Component {
             <>
             <main>
                 {/* Navbar */}
-                <Navbar/>
+                    <Navbar/>
                 {/* Hero */}
                 <section className="hero">
                     <div className="hero__cta">
@@ -46,10 +46,12 @@ export default class Index extends Component {
                     </div>
                 </section>
                   </main>
-                <section className="search">
+                <div className="container">
+                    <section className="search">
                     <input type="text" name="search" id="search" placeholder='what do you need to buy' />
                     <button className="search__btn">Search</button>
                 </section>
+                </div>
 
                 <section className="why__payington">
                     <div classsName="why__img">
@@ -190,31 +192,37 @@ export default class Index extends Component {
                     </div>
                 </section>
                 <section className="quotes">
-                    <div className='quote__container'>
-                        <Link href="" className="arrow"><ArrowBackIcon/></Link>
-                            <div className='quoteImages'>
-                                <img src={quotes} alt="" />
-                                <div className="quotes__text">
-                                    <div className="content">
-                                        <FormatQuoteIcon style={{ fontSize: 70 }} className='newQuotes'/>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        Quasi est laborum quos repudiandae distinctio,
-                                        aperiam deleniti eos id dicta odio.
-                                    </p>
-                                    <h2>Kamali Ange</h2>
-
-                                    <p className='heading'>payingtone user</p>
-                                    <div className="rating">
-                                        <StarIcon className='iconz'/>
-                                        <StarIcon className='iconz'/>
-                                        <StarIcon className='iconz'/>
-                                        <StarIcon className='iconz'/>
-                                        <StarIcon style={{color:'#C4C4C4'}}/>
-                                    </div>
-                                    </div>
+                    <div className="container">
+                        <div className="quote__flex">
+                            <div><Link href="" className="arrow"><ArrowBackIcon/></Link></div>
+                            <div className='quotes__container'>
+                                <div className="quote__image">
+                                    <img src={quotes}  alt="" />
                                 </div>
-                            </div>
-                        <Link href="" className='arrow'><ArrowForwardIcon/></Link>
+                                <div className="quotes__text">
+                                        <div className="content">
+                                            <FormatQuoteIcon style={{ fontSize: 70 }} className='newQuotes'/>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                            Quasi est laborum quos repudiandae distinctio,
+                                            aperiam deleniti eos id dicta odio.
+                                        </p>
+                                        <h2>Kamali Ange</h2>
+
+                                        <p className='heading'>payingtone user</p>
+                                        <div className="rating">
+                                            <StarIcon className='iconz'/>
+                                            <StarIcon className='iconz'/>
+                                            <StarIcon className='iconz'/>
+                                            <StarIcon className='iconz'/>
+                                            <StarIcon style={{color:'#C4C4C4'}}/>
+                                        </div>
+                                        </div>
+                                    </div>
+                            </div>  
+
+                            <div> <Link href="" className='arrow'><ArrowForwardIcon/></Link></div>
+
+                        </div>
                     </div>
                 </section>
                 <Footer/>

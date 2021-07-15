@@ -43,7 +43,8 @@ export default class BuyInsurance extends Component {
                     </div>
                 </nav>
                 </span>
-                <div className='insurance__text'>
+                <div className="container">
+                    <div className='insurance__text'>
                     <h1>Buy Insurance</h1>
                     <h6>Choose insurance you want to buy and continue</h6>
                 </div>
@@ -55,6 +56,7 @@ export default class BuyInsurance extends Component {
                         className='search__input'
                     />
                     <button className='search__btn'>Search</button>
+                </div>
                 </div>
             </div>
             <section className="buyInsurances">

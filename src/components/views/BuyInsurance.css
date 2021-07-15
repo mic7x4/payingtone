@@ -5,6 +5,9 @@
   background-repeat: no-repeat;
   object-fit: contain;
 }
+.container {
+  width: 1440px;
+}
 .clean {
   background: transparent;
 }
@@ -32,7 +35,7 @@
   justify-content: space-around;
   align-items: center;
   align-items: center;
-  left: 369px;
+  left: 500px;
   bottom: 19px;
 }
 .insurance__text {
