@@ -6,8 +6,8 @@ import playstore from '../assets/images/playstore.svg'
 import applestore from '../assets/images/appstore.svg'
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
-import StarIcon from '@material-ui/icons/Star';
 import FooterLogo from '../assets/images/footerlogo.png'
+import {Link} from 'react-router-dom'
 function Footer() {
     return (
         <footer>
@@ -18,10 +18,10 @@ function Footer() {
                     <div className="footer__sec">
                         <h2>Navigate</h2>
                         <ul className='footer__link'>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">Contact Us</a></li>
-                            <li><a href="">Manage</a></li>
+                            <li><Link to='/' href="">Home</Link></li>
+                            <li><Link href="">About Us</Link></li>
+                            <li><Link href="">Contact Us</Link></li>
+                            <li><Link href="">Manage</Link></li>
                         </ul>
                     </div>
                     <div className='footer__sec'>
@@ -48,12 +48,12 @@ function Footer() {
                         <div className="download__app">
                             <h3>Download our App on</h3>
                             <div className="apps">
-                                <a href="" className='playstore'>
+                                <Link className='playstore'>
                                     <img src={playstore} alt="" />
-                                </a>
-                                <a href='' className='appstore'>
+                                </Link>
+                                <Link className='appstore'>
                                     <img src={applestore} alt="" />
-                                </a>
+                                </Link>
                             </div>
                         </div>
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import LocationOnIcon from '@material-ui/icons/LocationOn';
-import EmailIcon from '@material-ui/icons/Email';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import WcIcon from '@material-ui/icons/Wc';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';

@@ -85,7 +85,7 @@ export default class Index extends Component {
                                 </p>
                             </div>
                         </div>
-                        <a className="btn__readmore">Read More <ArrowRightAltIcon/></a>
+                        <Link className="btn__readmore">Read More <ArrowRightAltIcon/></Link>
                     </div>
                 </section>
                 <section className="choose__product">
@@ -191,7 +191,7 @@ export default class Index extends Component {
                 </section>
                 <section className="quotes">
                     <div className='quote__container'>
-                        <a href="" className="arrow"><ArrowBackIcon/></a>
+                        <Link href="" className="arrow"><ArrowBackIcon/></Link>
                             <div className='quoteImages'>
                                 <img src={quotes} alt="" />
                                 <div className="quotes__text">
@@ -214,7 +214,7 @@ export default class Index extends Component {
                                     </div>
                                 </div>
                             </div>
-                        <a href="" className='arrow'><ArrowForwardIcon/></a>
+                        <Link href="" className='arrow'><ArrowForwardIcon/></Link>
                     </div>
                 </section>
                 <Footer/>
