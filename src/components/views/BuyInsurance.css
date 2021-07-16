@@ -5,6 +5,11 @@
   background-repeat: no-repeat;
   object-fit: contain;
 }
+.navbar__clean {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .container {
   width: 1440px;
 }
@@ -16,8 +21,8 @@
 }
 .nav__holder {
   position: absolute;
-  width: 100%;
   top: 0;
+  width: 1440px;
 }
 .background {
   background: rgba(9, 83, 94, 0.8);
@@ -40,8 +45,9 @@
 }
 .insurance__text {
   text-align: center;
-  position: inherit;
-  bottom: 241px;
+  position: absolute;
+  top: 200px;
+  left: 35%;
 }
 .insurance__text h1 {
   font-family: "Roboto";

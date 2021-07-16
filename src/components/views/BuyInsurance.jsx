@@ -10,10 +10,12 @@ export default class BuyInsurance extends Component {
     render() {
         return (
             <>
-            <div className='buy__insurance'>
+            
+            <div className='buy__insurance'> 
                 <div className="background"></div>
-                <span className='nav__holder'>
-                     <nav className="navbar clean">
+               <div className="container">
+                    <div className='nav__holder'>
+                     <nav className="navbar__clean">
                     <div className='navbar__logo'>
                         <Link to='/'> <img src={InsuranceLogo} alt="" /> </Link>
                     </div>
@@ -42,7 +44,8 @@ export default class BuyInsurance extends Component {
                         </button>
                     </div>
                 </nav>
-                </span>
+                </div>
+               </div>
                 <div className="container">
                     <div className='insurance__text'>
                     <h1>Buy Insurance</h1>
