@@ -56,10 +56,90 @@
   margin: 0 auto;
   width: 100%;
 }
+
+.ins__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details__container {
+  display: flex;
+  justify-content: space-around;
+}
+.left__side h2,
+.ins__rightside1 h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+.insurance__next {
+  width: 179px;
+  height: 59px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  background: rgba(9, 83, 94, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 15px;
+  cursor: pointer;
+}
+.insurance__btn {
+  width: 455px;
+  height: 70px;
+  margin: 0 auto;
+}
+.calculate__btn {
+  background: rgba(9, 83, 94, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+.left__side,
+.ins__rightside1 {
+  margin-top: 56px;
+}
+.ins__rightside1 h2 {
+  text-align: right;
+}
 .form__group {
   background: rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   z-index: 100;
+}
+.form__group ::placeholder,
+.MuiFormLabel-root {
+  color: #fff;
+}
+.MuiInput-underline:before,
+.MuiInput-underline:after {
+  border: none !important;
+}
+.MuiInputBase-root {
+  color: #fff !important;
+}
+.MuiFormLabel-root {
+  color: #fff !important;
+}
+
+.ins__rightside {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 1.2rem;
 }
 .ins__control {
   outline: none;

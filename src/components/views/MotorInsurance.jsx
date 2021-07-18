@@ -3,16 +3,17 @@ import {Link} from 'react-router-dom'
 import GreenLogo from '../../assets/images/greenlogo.svg'
 import './MotorInsurance.css'
 import Footer from '../Footer'
+import TextField from '@material-ui/core/TextField';
 
 function MotorInsurance() {
+
     return (
         <div className='hidden'>
             {/* Green Navbar */}
             <div className="motorimsurance__bg">
                 
                 <div className="background__ins"></div>
-                <div className="container">
-                    
+                <div className="container ">
                 <span className='nav__holder'>
                     <div className="container">
                    <nav className="motorInsurance clean">
@@ -106,9 +107,51 @@ function MotorInsurance() {
                             </div>
                         </form>
                     </div>
-                    <div className='ins__rightside'>
-
+                    <div className='ins__rightside1'>
+                        <h2>Insurance Calculator</h2>
+                        <div className="ins__rightside">
+                        <div className='form__group'>
+                                <select name="vehical" id="" className='ins__control'>
+                                    <option className='ins__options'>Vehical Type</option>
+                                    <option className='ins__options'>Vehical Type</option>
+                                    <option className='ins__options'>Vehical Type</option>
+                                    <option className='ins__options'>Vehical Type</option>
+                                </select>
+                            </div>
+                             <div className='form__group'>
+                                <select name="vehical" id="" className='ins__control'>
+                                    <option className='ins__options'>Vehical use</option>
+                                    <option className='ins__options'>Vehical use</option>
+                                    <option className='ins__options'>Vehical use</option>
+                                    <option className='ins__options'>Vehical use</option>
+                                </select>
+                            </div>
+                            
+                             <div className='form__group'>
+                                 <TextField
+                                    label="Insurance Start date"
+                                    className='ins__control'                              
+                                    type="date"
+                                    defaultValue="2017-05-24"
+                                    style={{color:'#fff'}}
+                                 />
+                            </div>
+                             <div className='form__group'>
+                                 <TextField
+                                    label="Insurance end date"
+                                    className='ins__control'                              
+                                    type="date"
+                                    defaultValue="2017-05-24"
+                                 />
+                            </div>
+                            <div className="insurance__btn">
+                                <button className='calculate__btn'>Calculate</button>
+                            </div>
+                        </div>   
                     </div>
+                </div>
+                <div className="ins__flex">
+                    <button className='insurance__next'>Next</button>
                 </div>
             </div>
         </section>
