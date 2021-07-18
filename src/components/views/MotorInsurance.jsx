@@ -11,7 +11,6 @@ function MotorInsurance() {
         <div className='hidden'>
             {/* Green Navbar */}
             <div className="motorimsurance__bg">
-                
                 <div className="background__ins"></div>
                 <div className="container ">
                 <span className='nav__holder'>
@@ -130,7 +129,7 @@ function MotorInsurance() {
                              <div className='form__group'>
                                  <TextField
                                     label="Insurance Start date"
-                                    className='ins__control'                              
+                                    className='ins__control white'                              
                                     type="date"
                                     defaultValue="2017-05-24"
                                     style={{color:'#fff'}}
@@ -138,8 +137,9 @@ function MotorInsurance() {
                             </div>
                              <div className='form__group'>
                                  <TextField
+
                                     label="Insurance end date"
-                                    className='ins__control'                              
+                                    className='ins__control white'                              
                                     type="date"
                                     defaultValue="2017-05-24"
                                  />

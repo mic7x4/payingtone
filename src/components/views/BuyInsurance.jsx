@@ -9,8 +9,8 @@ import { Link } from 'react-router-dom'
 export default class BuyInsurance extends Component {
     render() {
         return (
-            <>
             
+            <>
             <div className='buy__insurance'> 
                 <div className="background"></div>
                <div className="container">
@@ -76,7 +76,7 @@ export default class BuyInsurance extends Component {
                                     </p>
                                 </div>
                                 <div className="call__toaction">
-                                    <Link to='motor'>Buy Now</Link>
+                                    <Link to='/status'>Buy Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -90,7 +90,7 @@ export default class BuyInsurance extends Component {
                                     </p>
                                 </div>
                                 <div className="call__toaction">
-                                    <Link to='motor'>Buy Now</Link>
+                                    <Link to='/status'>Buy Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +104,7 @@ export default class BuyInsurance extends Component {
                                     </p>
                                 </div>
                                 <div className="call__toaction">
-                                    <Link to='motor'>Buy Now</Link>
+                                    <Link to='/status'>Buy Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +118,7 @@ export default class BuyInsurance extends Component {
                                     </p>
                                 </div>
                                 <div className="call__toaction">
-                                    <Link to='motor'>Buy Now</Link>
+                                    <Link to='/status'>Buy Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -132,7 +132,7 @@ export default class BuyInsurance extends Component {
                                     </p>
                                 </div>
                                 <div className="call__toaction">
-                                    <Link to='motor'>Buy Now</Link>
+                                    <Link to='/status'>Buy Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -146,7 +146,7 @@ export default class BuyInsurance extends Component {
                                     </p>
                                 </div>
                                 <div className="call__toaction">
-                                    <Link to='motor'>Buy Now</Link>
+                                    <Link to='/status'>Buy Now</Link>
                                 </div>
                             </div>
                         </div>

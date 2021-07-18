@@ -4,6 +4,7 @@ import Login from './components/views/Login';
 import BuyInsurance from './components/views/BuyInsurance';
 import { BrowserRouter, Route} from "react-router-dom";
 import MotorInsurance from './components/views/MotorInsurance'
+import EmploymentStatus from './components/views/EmploymentStatus'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Route exact path='/login' component={Login} />
       <Route exact path='/buy/motor' component={BuyInsurance} />
       <Route exact path = '/motorinsurance' component={MotorInsurance}/>
+      <Route exact path='/status' component={EmploymentStatus}  />
      </BrowserRouter>
   );
 }

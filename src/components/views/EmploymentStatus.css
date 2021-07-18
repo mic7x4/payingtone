@@ -1,0 +1,37 @@
+.card.green {
+  width: 319px;
+  background: #248290;
+}
+.card img {
+  width: 100%;
+}
+.status__btn {
+  width: 100%;
+  cursor: pointer;
+  background: #248290;
+}
+.employment__statuses {
+  background: #fafcff;
+  padding: 1rem 0;
+  margin-top: 40px;
+}
+.company__status,
+.individual__status {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+}
+.contents.green {
+  background: #248290;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
