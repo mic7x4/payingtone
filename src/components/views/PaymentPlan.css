@@ -1,0 +1,139 @@
+.payment__plan {
+  background: #278d9c;
+  height: 545px;
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.payment__plangrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 25em));
+  grid-gap: 1.5rem;
+  justify-content: center;
+}
+.plan__card {
+  background: linear-gradient(
+    180deg,
+    #09535e 0%,
+    rgba(30, 142, 151, 0.04) 100%
+  );
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.493);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+.plan__card h1 {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-top: 33px;
+}
+.plan__card p {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 15px;
+  color: #fbfbfbde;
+}
+.plan__heading {
+  position: absolute;
+  top: 55%;
+  opacity: 0.1;
+  color: linear-gradient(266.19deg, #09535e 18.02%, #1e8e97 99.17%);
+  font-size: 77px !important;
+}
+.plan__content {
+  margin-top: 82px;
+}
+
+.plan__btn {
+  background: linear-gradient(266.19deg, #09535e 18.02%, #1e8e97 99.17%);
+  border-radius: 12px;
+  width: 183px;
+  height: 49px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 62px;
+  margin-bottom: 19px;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.green__text {
+  width: 152px;
+  height: 395px;
+  background: #278d9c;
+  position: relative;
+}
+.plan__contentz {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.basic__plan {
+  margin-top: 140px;
+}
+.plan__medium h1,
+.basic__plan h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
+  color: #000000;
+}
+.plan__medium {
+  width: 590px;
+  margin-left: 306px;
+}
+.plan__basic {
+  width: 590px;
+}
+.plan__maximum {
+  width: 590px;
+}
+.plan__medium p,
+.plan__basic p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin: 28px 0;
+}
+.plan__medium li,
+.plan__basic li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.plan__medium li span,
+.plan__basic li span {
+  width: 13px;
+  height: 13px;
+  background: #c4c4c4;
+  display: inline-block;
+  border-radius: 50%;
+}
+.green__text p {
+  transform: rotate(90deg);
+  color: white;
+  position: absolute;
+  top: 50%;
+}

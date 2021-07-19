@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import './Login.css'
 import  MainLogo from '../../assets/images/mainlogo.svg'
 
-export default class Login extends Component {
+ class Login extends Component {
     componentDidMount(){
         document.title = 'PayingTom | Login'
     }
@@ -69,3 +69,5 @@ export default class Login extends Component {
         )
     }
 }
+
+export default Login

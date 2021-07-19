@@ -6,6 +6,7 @@ import { BrowserRouter, Route} from "react-router-dom";
 import MotorInsurance from './components/views/MotorInsurance'
 import EmploymentStatus from './components/views/EmploymentStatus'
 import Insurer from './components/views/Insurer';
+import Plan from './components/views/PaymentPlan'
 
 
 function App() {
@@ -15,9 +16,10 @@ function App() {
       <Route exact path='/register' component={RegisterForm}/>
       <Route exact path='/login' component={Login} />
       <Route exact path='/buy/motor' component={BuyInsurance} />
-      <Route exact path = '/motorinsurance' component={MotorInsurance}/>
+      <Route exact path ='/motorinsurance' component={MotorInsurance}/>
       <Route exact path='/status' component={EmploymentStatus}  />
       <Route exact path='/insurer' component={Insurer}/>
+      <Route exact path='/buy/plan' component={Plan}/>
      </BrowserRouter>
   );
 }

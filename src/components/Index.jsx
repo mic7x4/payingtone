@@ -101,6 +101,7 @@ export default class Index extends Component {
                             <div  className='insurance'>
                                 <h2>Insurance</h2>
                                 <p>Buy all types of insurance</p>
+                            
                             </div>
                              <Link to='/buy/motor'><button classsName='buy__now'>Buy Now</button></Link>
                         </div>
