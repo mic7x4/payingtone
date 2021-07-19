@@ -1,6 +1,9 @@
 html {
   height: 100vh;
 }
+.signup__form {
+  background: #fafcff;
+}
 .left {
   width: 50%;
   height: 100%;

@@ -8,8 +8,7 @@ import { Link } from 'react-router-dom'
 
 export default class BuyInsurance extends Component {
     render() {
-        return (
-            
+        return ( 
             <>
             <div className='buy__insurance'> 
                 <div className="background"></div>

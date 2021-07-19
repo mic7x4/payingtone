@@ -1,16 +1,11 @@
 import React,{Component} from 'react'
-import LocationOnIcon from '@material-ui/icons/LocationOn';
-import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
-import WcIcon from '@material-ui/icons/Wc';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import {Link} from 'react-router-dom'
 import Footer from '../Footer'
-import {Link } from 'react-router-dom'
 import GreenLogo from '../../assets/images/greenlogo.svg'
-import './UserDetails.css'
 
 
-class UserAddress extends Component {
-   continue = e => {
+export default class EmployeeDetails extends Component {
+    continue = e => {
     e.preventDefault();
     this.props.nextStep();
   };
@@ -19,11 +14,10 @@ class UserAddress extends Component {
     e.preventDefault();
     this.props.prevStep();
   };
-
-  render(){
-    const {values,handleChange} = this.props;
-    return ( 
-        <>
+    render() {
+        const {values,handleChange} =  this.props;
+        return (
+         <>
           <div className="motorimsurance__bg">
                 <div className="background__ins"></div>
                 <div className="container ">
@@ -64,45 +58,65 @@ class UserAddress extends Component {
             </div>
             <section>
                 <div  className="text__ins">
-                <h1>Sign Up</h1>
-                <p>Complete the form below to sign up!</p>
+                <h1>Employment Details</h1>
+                <p>Complete this form with required employment information</p>
                 </div>
             </section>
             <div className="signup__form">
               <div className="right__cta">
-                <h2>Sign Up</h2>
+                <h4>Employment info</h4>
               </div>
         <form action="">
             <div className='form__group'>
-              <span><LocationOnIcon 
-                className='details'/></span><input 
-                type="text" name='address' 
+                <input 
+                type="text" name='ename' 
                 defaultValue={values.fullAddress}
-                onChange={handleChange('address')}
+                onChange={handleChange('ename')}
                 className='form__control' 
-                placeholder='Enter your Address' />
+                placeholder='Employer name' />
             </div>
             <div className='form__group'>
-              <span><AccountCircleIcon className='details'/></span>
-              <input type="file"  
-                name='profile' 
+                <input 
+                type="text" name='eAddress' 
+                defaultValue={values.fullAddress}
+                onChange={handleChange('eAddress')}
                 className='form__control' 
-                placeholder='Upload image' 
-                defaultValue={values.image}
-                onChange={handleChange('profile')}
-                />
-              <PhotoLibraryIcon  className='details'/>
+                placeholder='Employer name' />
             </div>
             <div className='form__group'>
-              <span><WcIcon className='details'/></span>
-              <select className="form__control" name='gender' defaultValue={values.gender}>
-                <option value='none'>Gender</option>
-                <option value='male'>Male</option>
-                <option value='female'>Female</option>
-              </select>
+                <input 
+                type="text" name='tinNumber' 
+                defaultValue={values.fullAddress}
+                onChange={handleChange('tinNumber')}
+                className='form__control' 
+                placeholder='Employer tin number' />
+            </div>
+            <div className='form__group'>
+                <input 
+                type="text" name='pointOfcontract' 
+                defaultValue={values.fullAddress}
+                onChange={handleChange('pointOfcontact')}
+                className='form__control' 
+                placeholder='Employer point of contact' />
+            </div>
+            <div className='form__group'>
+                <input 
+                type="text" name='lenOfcontract' 
+                defaultValue={values.fullAddress}
+                onChange={handleChange('lenOfcontract')}
+                className='form__control' 
+                placeholder='Length of Contract' />
+            </div>
+            <div className='form__group'>
+                <input 
+                type="text" name='yearofs' 
+                defaultValue={values.fullAddress}
+                onChange={handleChange('yearofs')}
+                className='form__control' 
+                placeholder='Years of service' />
             </div>
                 <div className="form__group">
-                  <button onClick={this.continue} className='continue__btn'>Continue</button>
+                  <button onClick={this.continue} className='continue__btn'>Submit</button>
                 </div>
         </form>
             </div>
@@ -110,10 +124,6 @@ class UserAddress extends Component {
                 <Footer/>
             </section>
         </>
-    )
+        )
+    }
 }
-}
-
-
-export default UserAddress
-

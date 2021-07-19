@@ -1,15 +1,11 @@
 import React,{Component} from 'react'
-import PersonIcon from '@material-ui/icons/Person';
-import EmailIcon from '@material-ui/icons/Email';
-import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
+import {Link} from 'react-router-dom'
 import Footer from '../Footer'
-import {Link } from 'react-router-dom'
 import GreenLogo from '../../assets/images/greenlogo.svg'
-import './UserDetails.css'
 
 
-class UserDetails extends Component {
-   continue = e => {
+class EmploymentDetails extends Component {
+     continue = e => {
     e.preventDefault();
     this.props.nextStep();
   };
@@ -18,13 +14,10 @@ class UserDetails extends Component {
     e.preventDefault();
     this.props.prevStep();
   };
-
-  render(){
-    const {values,handleChange} = this.props;
-
-    console.log(values,handleChange)
-    return ( 
-        <>
+    render(){
+        const {values,handleChange} =  this.props;
+    return (
+         <>
           <div className="motorimsurance__bg">
                 <div className="background__ins"></div>
                 <div className="container ">
@@ -65,44 +58,51 @@ class UserDetails extends Component {
             </div>
             <section>
                 <div  className="text__ins">
-                <h1>Sign Up</h1>
-                <p>Complete the form below to sign up!</p>
+                <h1>Employment Details</h1>
+                <p>Complete this form with required employment information</p>
                 </div>
             </section>
             <div className="signup__form">
               <div className="right__cta">
-                <h2>Sign Up</h2>
+                <h4>Employment info</h4>
               </div>
-            <form action="">
-                <div className='form__group'>
-                  <span><PersonIcon className='details'/></span>
-                    <input type="text" 
-                      name='fullname' 
-                      className='form__control' 
-                      placeholder='Full Name' 
-                      defaultValue={values.fullName}
-                      onChange={handleChange('fullname')}
-                      />
-                </div>
-                <div className='form__group'>
-                  <span><EmailIcon className='details'/></span>
-                    <input 
-                      type="email" 
-                      name='email' 
-                      className='form__control' 
-                      placeholder='Email' />
-                </div>
-                <div className='form__group'>
-                  <span><PhoneAndroidIcon className='details'/></span>
-                    <input 
-                      type="text" name='phone' 
-                      className='form__control' 
-                      placeholder='Phone'/>
-                </div>
+        <form action="">
+            <div className='form__group'>
+                <input 
+                type="text" name='pemployment' 
+                defaultValue={values.fullAddress}
+                onChange={handleChange('address')}
+                className='form__control' 
+                placeholder='Place of employment' />
+            </div>
+            <div className='form__group'>
+                <input 
+                type="text" name='jtitle' 
+                defaultValue={values.fullAddress}
+                onChange={handleChange('address')}
+                className='form__control' 
+                placeholder='Job title' />
+            </div>
+            <div className='form__group'>
+                <input 
+                type="text" name='monthly' 
+                defaultValue={values.fullAddress}
+                onChange={handleChange('address')}
+                className='form__control' 
+                placeholder='Montly Income' />
+            </div>
+            <div className='form__group'>
+                <input 
+                type="text" name='cEnddate' 
+                defaultValue={values.fullAddress}
+                onChange={handleChange('address')}
+                className='form__control' 
+                placeholder='Contract end date' />
+            </div>
                 <div className="form__group">
-                  <button onClick={this.continue} className='continue__btn'>Continue</button>
+                  <button onClick={this.continue} className='continue__btn'>Submit</button>
                 </div>
-            </form>
+        </form>
             </div>
             <section>
                 <Footer/>
@@ -112,4 +112,4 @@ class UserDetails extends Component {
 }
 }
 
-export default UserDetails
+export default EmploymentDetails
