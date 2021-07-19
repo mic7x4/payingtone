@@ -7,6 +7,7 @@ import MotorInsurance from './components/views/MotorInsurance'
 import EmploymentStatus from './components/views/EmploymentStatus'
 import Insurer from './components/views/Insurer';
 import Plan from './components/views/PaymentPlan'
+import Payment from './components/views/PaymentMethod'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route exact path='/status' component={EmploymentStatus}  />
       <Route exact path='/insurer' component={Insurer}/>
       <Route exact path='/buy/plan' component={Plan}/>
+      <Route exact path='/method' component={Payment} />
      </BrowserRouter>
   );
 }

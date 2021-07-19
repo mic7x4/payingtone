@@ -1,0 +1,132 @@
+.payment__method {
+  background: linear-gradient(180deg, #09535e 0%, #278d9c 100%);
+  height: 268px;
+  margin-top: 3rem;
+}
+.all__methods {
+  display: flex;
+  justify-content: space-around;
+}
+.direct__one {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 339px;
+  height: 97px;
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 10px;
+  color: #fff;
+}
+.direct__two {
+  border-radius: 12px;
+  width: 321px;
+  height: 93px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(266.19deg, #09535e 18.02%, #278d9c 99.17%);
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+}
+.direct__three {
+  border-radius: 10px;
+  width: 97px;
+  height: 93px;
+}
+.direct__three img {
+  width: 100%;
+  height: 100%;
+}
+.method__text {
+  color: #fff;
+  padding: 36px 0;
+}
+.method__text {
+  margin-left: 7rem;
+}
+
+/* Installment Styles */
+.installment__container {
+  margin-top: 55px;
+}
+.installement__text {
+  margin-left: 7rem;
+  margin-bottom: 57px;
+}
+.installement__text h1 {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.installement__text p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #757575;
+  padding: 12px 0;
+}
+.all__installments {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.installements__card {
+  background: #ffffff;
+  box-shadow: 3px 3px 4px rgba(24, 143, 255, 0.404);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 66px;
+}
+.installment__txt {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 2.1rem;
+}
+.installment__paragraph {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+.installements__card h1 {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+  color: #2a333e;
+}
+
+.payment__money {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  margin: 16px 0;
+}
+.installment__btn {
+  width: 159px;
+  height: 38px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  background: linear-gradient(88.9deg, #09535e 1.54%, #1e8e97 99.64%);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
