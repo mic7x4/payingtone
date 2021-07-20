@@ -1,0 +1,70 @@
+.confirmation__container {
+  background: linear-gradient(180deg, #09535e 0%, #278d9c 100%);
+  margin-top: 3.4rem;
+}
+.confirmation__content {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  width: 763px;
+  height: 503px;
+}
+.flex__confi {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.confirmation__content {
+  padding: 5rem;
+}
+.confirmation__p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.confirmation__btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+.confirm,
+.decline {
+  display: flex;
+  align-items: center;
+  width: 288px;
+  height: 63px;
+  background: linear-gradient(266.19deg, #09535e 18.02%, #278d9c 99.17%);
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.confirm span,
+.decline span {
+  background-image: url("../../assets/images/rectangle.svg");
+  display: inline-block;
+  width: 5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.conf__holder {
+  width: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ml__4 {
+  margin-left: 2rem;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
