@@ -9,7 +9,7 @@ import Insurer from './components/views/Insurer';
 import Plan from './components/views/PaymentPlan'
 import Payment from './components/views/PaymentMethod'
 import Confirmation from './components/views/Confirmation';
-
+import OTP from './components/views/Otp'
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
       <Route exact path='/buy/plan' component={Plan}/>
       <Route exact path='/method' component={Payment} />
       <Route exact path='/confirmation' component={Confirmation}/>
+      <Route exact path='/otp' component={OTP}/>
      </BrowserRouter>
   );
 }

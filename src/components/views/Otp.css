@@ -1,0 +1,67 @@
+.otp {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: #09535e;
+}
+.otp__container {
+  width: 592px;
+  height: 100vh;
+  background: linear-gradient(180deg, #09535e 0%, #278d9c 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.otp__group {
+  width: 427px;
+  background: rgba(255, 255, 255, 0.46);
+  border-radius: 15px;
+  height: 4rem;
+}
+.otp__control {
+  border: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  outline: none;
+  padding: 0 2rem;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 21px;
+  color: #2a333e;
+}
+.confirm__btn {
+  background: #ffffff;
+  border-radius: 20px;
+  width: 427px;
+  height: 4rem;
+  border: none;
+  outline: none;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #09535e;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.otp__heading {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.otp__p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
