@@ -15,6 +15,7 @@ import BankApproval from './components/views/BankApproval';
 import AboutUs from './components/views/AboutUs';
 import ContactUs from './components/views/ContactUs';
 import Signatarry from './components/views/Signatarry';
+import Signatarry2 from './components/views/Signatarry2';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
       <Route exact path='/aboutus' component={AboutUs}/>
       <Route exact path='/contactus' component={ContactUs}/>
       <Route exact path='/signature' component={Signatarry}/>
+      <Route exact path='/signature2' component={Signatarry2}/>
      </BrowserRouter>
   );
 }
