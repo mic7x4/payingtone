@@ -10,6 +10,7 @@ import Plan from './components/views/PaymentPlan'
 import Payment from './components/views/PaymentMethod'
 import Confirmation from './components/views/Confirmation';
 import OTP from './components/views/Otp'
+import BankConfirmation from './components/views/BankConfirmation';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route exact path='/method' component={Payment} />
       <Route exact path='/confirmation' component={Confirmation}/>
       <Route exact path='/otp' component={OTP}/>
+      <Route exact path='/bankconfirmation' component={BankConfirmation}/>
      </BrowserRouter>
   );
 }

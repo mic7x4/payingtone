@@ -16,7 +16,8 @@ export class BankDetails extends Component {
   };
     render() {
         const {values,handleChange} =  this.props;
-        return ( <>
+        return (
+           <>
           <div className="motorimsurance__bg">
                 <div className="background__ins"></div>
                 <div className="container ">
