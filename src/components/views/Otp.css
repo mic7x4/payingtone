@@ -1,8 +1,13 @@
 .otp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   justify-content: center;
   position: relative;
-  background: #09535e;
+  background-color: #278d9c;
 }
 .otp__container {
   width: 592px;

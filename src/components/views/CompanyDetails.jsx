@@ -1,7 +1,11 @@
 import React,{Component} from 'react'
 import {Link} from 'react-router-dom'
 import Footer from '../Footer'
+import LockIcon from '@material-ui/icons/Lock';
+import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 import GreenLogo from '../../assets/images/greenlogo.svg'
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 
 
 export class CompanyDetails extends Component {
@@ -124,16 +128,46 @@ export class CompanyDetails extends Component {
                 placeholder='Email Address' />
             </div>
             <div className='form__group'>
-                <input 
-                type="text" name='passord' 
-                defaultValue={values.fullAddress}
-                onChange={handleChange('password')}
+                <span>
+                    <LockIcon 
+                    className='details'/>
+                </span>
+                <input
+                    type='password'
+                    name='cpassword'
+                    className='form__control' 
+                    placeholder='Enter Password' />
+                    <VisibilityOffIcon
+                     className="details passwd"
+                    />
+             </div>
+            <div className='form__group'>
+                <span>
+                    <LockIcon 
+                    className='details'/>
+                </span>
+                <input
+                    type='password'
+                    name='cpassword'
+                    className='form__control' 
+                    placeholder='Re-enter Password' />
+                    <VisibilityOffIcon
+                     className="details passwd"
+                    />
+             </div>
+            <div className='form__group'>
+              <span><AccountCircleIcon className='details'/></span>
+              <input type="file"  
+                name='profile' 
                 className='form__control' 
-                placeholder='Create Password' />
+                placeholder='Upload image' 
+                defaultValue={values.image}
+                />
+              <PhotoLibraryIcon  className='details'/>
             </div>
-                <div className="form__group">
-                  <button onClick={this.continue} className='continue__btn'>Submit</button>
-                </div>
+            <div className="form__group">
+                <button onClick={this.continue} className='continue__btn'>Submit</button>
+            </div>
         </form>
             </div>
             <section>

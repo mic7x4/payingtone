@@ -1,23 +1,28 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import MainLogo from '../assets/images/mainlogo.svg'
+import {Link } from 'react-router-dom'
+import GreenLogo from '../../assets/images/greenlogo.svg'
 
-function Navbar() {
+function GreenNav() {
     return (
-                <nav className="navbar clean">
+          <div className="motorimsurance__bg">
+                <div className="background__ins"></div>
+                <div className="container ">
+                <span className='nav__holder'>
+                    <div className="container">
+                   <nav className="motorInsurance clean">
                     <div className='navbar__logo'>
-                        <Link to='/'> <img src={MainLogo} alt="" /> </Link>
+                        <Link to='/'> <img src={GreenLogo} alt="" /> </Link>
                     </div>
                     <div className='navbar__link'>
                         <ul className='navbar__ul'>
                             <li className='navbar__item'>
-                                <Link to='/' className='navbar__link'>Home</Link>
+                                <Link  className='navbar__link'>Home</Link>
                             </li>
                             <li className='navbar__item'>
                                 <Link  className='navbar__link'>Manage</Link>
                             </li>
                             <li className='navbar__item'>
-                                <Link to='#buy' className='navbar__link'>Buy</Link>
+                                <Link  className='navbar__link'>Buy</Link>
                             </li>
                             <li className='navbar__item'>
                                 <Link  className='navbar__link'>About Us</Link>
@@ -33,7 +38,11 @@ function Navbar() {
                         </button>
                     </div>
                 </nav>
+               </div>
+                </span>
+                </div>
+            </div>
     )
 }
 
-export default Navbar
+export default GreenNav

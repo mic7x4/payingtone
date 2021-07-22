@@ -90,7 +90,7 @@ export default class Index extends Component {
                         <Link className="btn__readmore">Read More <ArrowRightAltIcon/></Link>
                     </div>
                 </section>
-                <section className="choose__product">
+                <section id='buy' className="choose__product">
                     <div className="choose__title">
                         <span><h1>Choose Product Or Service To Begin</h1></span>
                     </div>

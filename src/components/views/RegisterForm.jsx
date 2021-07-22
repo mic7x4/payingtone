@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import Index from '../Index'
 import BankDetails from './BankDetails'
 import CompanyDetails from './CompanyDetails'
 import EmployeeDetails from './EmployeeDetails'
@@ -96,7 +97,7 @@ class  RegisterForm extends Component {
                     values={values}
                 />
             default:
-                return 'Hello World'
+                return <Index/>
         }
 }
 }
