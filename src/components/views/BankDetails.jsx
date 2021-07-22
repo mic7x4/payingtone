@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import Footer from '../Footer'
+import AfterNavSection from './AfterNavSection';
 import GreenNav from './GreenNav';
 
 
@@ -19,12 +20,10 @@ export class BankDetails extends Component {
 
            <>
            <GreenNav/>
-            <section>
-                <div  className="text__ins">
-                <h1>Bank Details</h1>
-                <p>Complete this form with required employment information</p>
-                </div>
-            </section>
+            <AfterNavSection
+                heading='Bank Details'
+                paragraph='Complete this form with required employment information'
+            />
             <div className="signup__form">
               <div className="right__cta">
                 <h4>Bank information</h4>

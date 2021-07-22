@@ -4,6 +4,7 @@ import SanLam from '../../assets/images/sanlam.svg'
 import MayFair from '../../assets/images/mayfair.svg'
 import './Insurer.css'
 import GreenNav from './GreenNav'
+import AfterNavSection from './AfterNavSection'
 
 
  class Insurer extends Component {
@@ -20,12 +21,10 @@ import GreenNav from './GreenNav'
         return (
          <>
          <GreenNav/>
-            <section>
-                <div  className="text__ins">
-                <h1>Choose insurer</h1>
-                <p>Select an insurance company</p>
-                </div>
-            </section>
+            <AfterNavSection
+                heading='Choose insurer'
+                paragraph='Select an insurance company'
+            />
             <section className="insurrer__section">
                 <div className="container">
                     <div className="insurrer__grid">

@@ -2,17 +2,16 @@ import React from 'react'
 import './PaymentPlan.css'
 import Footer from '../Footer'
 import GreenNav from './GreenNav'
+import AfterNavSection from './AfterNavSection'
 
 function PaymentPlan() {
     return (
         <div>
             <GreenNav/>
-            <section>
-                <div  className="text__ins">
-                <h1>Tarrif</h1>
-                <p>Choose the right payment plan according to what suits you</p>
-                </div>
-            </section>
+            <AfterNavSection
+                heading='Tarrif'
+                paragraph='Choose the right payment plan according to what suits you'
+            />
             <section>
             <section className="payment__plan">
                 <div className="container">

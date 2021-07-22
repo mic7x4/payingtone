@@ -4,17 +4,16 @@ import Confirm from '../../assets/images/confirm.svg'
 import Decline from '../../assets/images/declined.svg'
 import Footer from '../Footer'
 import GreenNav from './GreenNav'
+import AfterNavSection from './AfterNavSection'
 
 function Confirmation() {
     return (
         <>
         <GreenNav/>
-            <section>
-                <div  className="text__ins">
-                <h1>Confirm</h1>
-                <p>Please read carefully & confirm this transaction</p>
-                </div>
-            </section>
+            <AfterNavSection
+                heading='Confirm'
+                paragraph='Please read carefully & confirm this transaction'
+            />
             <section className="confirmation__container">
                 <div className="container flex__confi">
                     <div className="confirmation__content">

@@ -3,6 +3,7 @@ import './MotorInsurance.css'
 import Footer from '../Footer'
 import TextField from '@material-ui/core/TextField';
 import GreenNav from './GreenNav'
+import AfterNavSection from './AfterNavSection';
 
 function MotorInsurance() {
 
@@ -10,13 +11,10 @@ function MotorInsurance() {
         <div className='hidden'>
             {/* Green Navbar */}
            <GreenNav/>
-            <section>
-                <div  className="text__ins">
-                <h1>Motor Insurance</h1>
-                <p>Complete the form below with required information to continue</p>
-                </div>
-            </section>
-
+            <AfterNavSection
+                heading='Motor Insurance'
+                paragraph='Complete the form below with required information to continue'
+            />
         <section className="insurance__details">
             <div className="container">
             <div className="details__background"></div>

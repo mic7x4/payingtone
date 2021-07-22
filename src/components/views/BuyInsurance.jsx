@@ -46,7 +46,7 @@ export default class BuyInsurance extends Component {
                 </div>
                </div>
                 <div className="container">
-                    <div className='insurance__text'>
+                <div className='insurance__text'>
                     <h1>Buy Insurance</h1>
                     <h6>Choose insurance you want to buy and continue</h6>
                 </div>

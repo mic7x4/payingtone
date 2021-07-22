@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import Footer from '../Footer'
+import AfterNavSection from './AfterNavSection';
 import GreenNav from './GreenNav';
 
 
@@ -18,12 +19,10 @@ class EmploymentDetails extends Component {
     return (
          <>
          <GreenNav/>
-            <section>
-                <div  className="text__ins">
-                <h1>Employment Details</h1>
-                <p>Complete this form with required employment information</p>
-                </div>
-            </section>
+            <AfterNavSection
+                heading='Employment Details'
+                paragraph='Complete this form with required employment information'
+            />
             <div className="signup__form">
               <div className="right__cta">
                 <h4>Employment info</h4>

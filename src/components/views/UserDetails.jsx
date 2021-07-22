@@ -5,6 +5,7 @@ import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 import Footer from '../Footer'
 import './UserDetails.css'
 import GreenNav from './GreenNav';
+import AfterNavSection from './AfterNavSection';
 
 
 class UserDetails extends Component {
@@ -25,12 +26,10 @@ class UserDetails extends Component {
     return ( 
         <>  
         <GreenNav/>
-        <section>
-                <div  className="text__ins">
-                <h1>Sign Up</h1>
-                <p>Complete the form below to sign up!</p>
-                </div>
-            </section>
+            <AfterNavSection
+                heading='Sign Up'
+                paragraph='Complete the form below to sign up!'
+            />
             <div className="signup__form">
               <div className="right__cta">
                 <h2>Sign Up</h2>

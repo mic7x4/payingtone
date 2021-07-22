@@ -9,17 +9,16 @@ import Processfile from '../../assets/images/processfile.svg'
 import Processhome from '../../assets/images/processhome.svg'
 import Processdetails from '../../assets/images/processdetail.svg'
 import GreenNav from './GreenNav'
+import AfterNavSection from './AfterNavSection'
 
 function AboutUs() {
     return (
         <div>
             <GreenNav/>
-            <section>
-                <div  className="text__ins">
-                <h1>About Us</h1>
-                <p>Keep in touch with payingtone by knowing us well!</p>
-                </div>
-            </section>
+            <AfterNavSection
+                heading='About Us'
+                paragraph='Keep in touch with payingtone by knowing us well!'
+            />
             <section className="our__mission">
                 <div className="container mission__flex">
                 <div className="green__imagecontainer">

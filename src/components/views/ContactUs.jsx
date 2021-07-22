@@ -5,17 +5,16 @@ import Location from '../../assets/images/location.svg'
 import Email from '../../assets/images/email.svg'
 import Phone from '../../assets/images/phone.svg'
 import GreenNav from './GreenNav'
+import AfterNavSection from './AfterNavSection'
 
 function ContactUs() {
     return (
         <div>
             <GreenNav/>
-            <section>
-                <div  className="text__ins">
-                <h1>Contact Us</h1>
-                <p>Keep in touch with PayingTone by contacting us here</p>
-                </div>
-            </section>
+            <AfterNavSection
+                heading='Contact Us'
+                paragraph='Keep in touch with PayingTone by contacting us here'
+            />
             <section className="get__intouch">
                 <div className="container">
                     <div className="intouch__content">

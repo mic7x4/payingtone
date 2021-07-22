@@ -17,6 +17,7 @@ import ContactUs from './components/views/ContactUs';
 import Signatarry from './components/views/Signatarry';
 import Signatarry2 from './components/views/Signatarry2';
 import BankDetails from './components/views/BankDetails';
+import Fridge from './components/views/Fridge';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
       <Route exact path='/signature' component={Signatarry}/>
       <Route exact path='/signature2' component={Signatarry2}/>
       <Route exact path='/details' component={BankDetails}/>
+      <Route exact path='/fridge' component={Fridge}/>
      </BrowserRouter>
   );
 }

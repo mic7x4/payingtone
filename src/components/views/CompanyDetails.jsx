@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import {Link} from 'react-router-dom'
 import Footer from '../Footer'
+import AfterNavSection from './AfterNavSection'
 import LockIcon from '@material-ui/icons/Lock';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 import GreenLogo from '../../assets/images/greenlogo.svg'
@@ -60,12 +61,10 @@ export class CompanyDetails extends Component {
                 </span>
                 </div>
             </div>
-            <section>
-                <div  className="text__ins">
-                <h1>Company Details</h1>
-                <p>Complete this form with required employment information</p>
-                </div>
-            </section>
+            <AfterNavSection
+                heading='Company Details'
+                paragraph='Complete this form with required employment information'
+            />
             <div className="signup__form">
               <div className="right__cta">
                 <h4>Employment info</h4>

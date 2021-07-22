@@ -5,17 +5,16 @@ import Wallet from '../../assets/images/wallet.svg'
 import Bk from '../../assets/images/bk.png'
 import Footer from '../Footer'
 import GreenNav from './GreenNav'
+import AfterNavSection from './AfterNavSection'
 
 function PaymentMethod() {
     return ( 
     <>
         <GreenNav/>
-            <section>
-                <div  className="text__ins">
-                <h1>Payment Method</h1>
-                <p>Choose the right payment method for you</p>
-                </div>
-            </section>
+            <AfterNavSection
+                heading='Payment Method'
+                paragraph='Choose the right payment method for you'
+            />
             <section className="payment__method">
                 <div className="container">
                     <h1 className='method__text'>- Direct payment -</h1>
