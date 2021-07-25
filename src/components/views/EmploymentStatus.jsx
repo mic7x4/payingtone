@@ -23,7 +23,7 @@ function EmploymentStatus() {
                                 <div className="card green">
                                     <img src={Individual} alt="" />
                                     <div className="contents green">
-                                        <Link className="individual__status">
+                                        <Link to='/motorinsurance' className="individual__status">
                                             Individual
                                         </Link>
                                     </div>
@@ -31,7 +31,7 @@ function EmploymentStatus() {
                                 <div className="card green">
                                     <img src={Individual} alt="" />
                                     <div className="contents green">
-                                        <Link className="company__status">Company</Link>
+                                        <Link to='/companydetails' className="company__status">Company</Link>
                                     </div>
                                 </div>
                             </div>

@@ -16,7 +16,7 @@ function GreenNav() {
                     <div className='navbar__link'>
                         <ul className='navbar__ul'>
                             <li className='navbar__item'>
-                                <Link  className='navbar__link'>Home</Link>
+                                <Link to='/'  className='navbar__link'>Home</Link>
                             </li>
                             <li className='navbar__item'>
                                 <Link  className='navbar__link'>Manage</Link>
@@ -25,7 +25,7 @@ function GreenNav() {
                                 <Link  className='navbar__link'>Buy</Link>
                             </li>
                             <li className='navbar__item'>
-                                <Link  className='navbar__link'>About Us</Link>
+                                <Link  to='/aboutus'  className='navbar__link'>About Us</Link>
                             </li>
                             <li className='navbar__item'>
                                 <Link  className='navbar__link'>Contact Us</Link>

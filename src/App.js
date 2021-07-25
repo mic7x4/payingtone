@@ -14,12 +14,16 @@ import BankConfirmation from './components/views/BankConfirmation';
 import BankApproval from './components/views/BankApproval';
 import AboutUs from './components/views/AboutUs';
 import ContactUs from './components/views/ContactUs';
-import Signatarry from './components/views/Signatarry';
+// import Signatarry from './components/views/Signatarry';
 import Signatarry2 from './components/views/Signatarry2';
 import BankDetails from './components/views/BankDetails';
 import Fridge from './components/views/Fridge';
+import CompanyDetails from './components/views/CompanyDetails';
+import CompanyAdmin from './components/views/CompanyAdmin';
+import DashboardHome from './components/dashboard/DashboardHome';
 
 function App() {
+  
   return (
     <BrowserRouter>
       <Route exact path='/' component={Index}/>
@@ -27,6 +31,8 @@ function App() {
       <Route exact path='/login' component={Login} />
       <Route exact path='/buy/motor' component={BuyInsurance} />
       <Route exact path ='/motorinsurance' component={MotorInsurance}/>
+      <Route exact path ='/companydetails' component={CompanyDetails}/>
+      <Route exact path ='/companyadmin' component={CompanyAdmin}/>
       <Route exact path='/status' component={EmploymentStatus}  />
       <Route exact path='/insurer' component={Insurer}/>
       <Route exact path='/buy/plan' component={Plan}/>
@@ -37,10 +43,11 @@ function App() {
       <Route exact path='/approval' component={BankApproval}/>
       <Route exact path='/aboutus' component={AboutUs}/>
       <Route exact path='/contactus' component={ContactUs}/>
-      <Route exact path='/signature' component={Signatarry}/>
+      {/* <Route exact path='/signature' component={Signatarry}/> */}
       <Route exact path='/signature2' component={Signatarry2}/>
       <Route exact path='/details' component={BankDetails}/>
       <Route exact path='/fridge' component={Fridge}/>
+      <Route exact path='/dashboard' component={DashboardHome}/>
      </BrowserRouter>
   );
 }

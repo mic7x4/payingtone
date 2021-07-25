@@ -61,15 +61,15 @@ function Fridge() {
                                     <h3>Colors</h3>
                                     <div className="colors">
                                     <div className="white__color">
-                                        <div className="white"></div>
+                                        <div className="pwhite"></div>
                                         <p className='color__indicator'>white</p>
                                     </div>
                                     <div className="black__color">
-                                        <div className="black"></div>
+                                        <div className="pblack"></div>
                                         <p className='color__indicator'>Black</p>
                                     </div>
                                     <div className="gray__color">
-                                        <div className="gray"></div>
+                                        <div className="pgray"></div>
                                         <p className='color__indicator'>gray</p>
                                     </div>
                                     <div className="next">

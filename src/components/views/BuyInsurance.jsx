@@ -75,7 +75,7 @@ export default class BuyInsurance extends Component {
                                     </p>
                                 </div>
                                 <div className="call__toaction">
-                                    <Link to='/buy/plan'>Buy Now</Link>
+                                    <Link to='/status'>Buy Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +89,7 @@ export default class BuyInsurance extends Component {
                                     </p>
                                 </div>
                                 <div className="call__toaction">
-                                    <Link to='/buy/plan'>Buy Now</Link>
+                                    <Link to='/status'>Buy Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +103,7 @@ export default class BuyInsurance extends Component {
                                     </p>
                                 </div>
                                 <div className="call__toaction">
-                                    <Link to='/buy/plan'>Buy Now</Link>
+                                    <Link to='/status'>Buy Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +117,7 @@ export default class BuyInsurance extends Component {
                                     </p>
                                 </div>
                                 <div className="call__toaction">
-                                    <Link to='/buy/plan'>Buy Now</Link>
+                                    <Link to='/status'>Buy Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +131,7 @@ export default class BuyInsurance extends Component {
                                     </p>
                                 </div>
                                 <div className="call__toaction">
-                                    <Link to='/buy/plan'>Buy Now</Link>
+                                    <Link to='/status'>Buy Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +145,7 @@ export default class BuyInsurance extends Component {
                                     </p>
                                 </div>
                                 <div className="call__toaction">
-                                    <Link to='/buy/plan'>Buy Now</Link>
+                                    <Link to='/status'>Buy Now</Link>
                                 </div>
                             </div>
                         </div>

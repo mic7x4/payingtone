@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './Signatarry.css'
 
 function Signatarry2() {
@@ -20,11 +21,11 @@ function Signatarry2() {
                 <div className="sign__group">
                     <input type="text" className='sign__control' placeholder='Address'/>
                 </div>
-                <button className="sign__btn">
-                    Add Another
+                <button className="signature__btn">
+                    <Link to='/insurer' className='rating__green'>Add Another</Link>
                 </button>
-                <button className="sign__btn">
-                    Confirm
+                <button className="signature__btn">
+                    <Link to='/' className='rating__green'>Confirm</Link>
                 </button>
             </section>
         </div>

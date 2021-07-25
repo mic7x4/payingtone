@@ -20,7 +20,7 @@ function Navbar() {
                                 <Link to='#buy' className='navbar__link'>Buy</Link>
                             </li>
                             <li className='navbar__item'>
-                                <Link  className='navbar__link'>About Us</Link>
+                                <Link to='/aboutus'  className='navbar__link'>About Us</Link>
                             </li>
                             <li className='navbar__item'>
                                 <Link  className='navbar__link'>Contact Us</Link>

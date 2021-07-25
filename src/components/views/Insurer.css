@@ -70,4 +70,5 @@
   outline: none;
   cursor: pointer;
   margin: 2rem 0;
+  display: block;
 }
