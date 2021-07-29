@@ -1,0 +1,14 @@
+.product__report {
+  z-index: 100;
+  flex: 4;
+  padding: 20px;
+  height: 100vh;
+}
+.product__table__holder {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+.mt__30 {
+  margin-top: 30px;
+}

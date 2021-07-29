@@ -23,7 +23,7 @@ function PaymentMethod() {
                             <img src={Wallet} alt="" />
                             <p>Amount : 350,000Rwf </p>
                         </Link>
-                        <Link className="direct__two">
+                        <Link to='/confirmation' className="direct__two">
                             <h3>Pay Directly</h3>
                         </Link>
                         <Link className="direct__three">

@@ -1,21 +1,12 @@
 import React,{Component} from 'react'
+import {Link} from 'react-router-dom'
 import Footer from '../Footer'
 import AfterNavSection from './AfterNavSection';
-import GreenNav from './GreenNav';
+import GreenNav from './GreenNav'
 
 
 export class BankDetails extends Component {
-    continue = e => {
-    e.preventDefault();
-    this.props.nextStep();
-  };
-
-  back = e => {
-    e.preventDefault();
-    this.props.prevStep();
-  };
     render() {
-        // const {values,handleChange} =  this.props;
         return (
 
            <>
@@ -61,10 +52,10 @@ export class BankDetails extends Component {
               </select>
             </div>
                 <div className="form__group">
-                  <button onClick={this.continue} className='continue__btn'>Submit</button>
+                  <Link to='/insurer'  className='continue__btn'>Submit</Link>
                 </div>
                 <div className="form__group"> 
-                  <button onClick={this.continue} className='continue__btn'>Add Bank</button>
+                  <Link  className='continue__btn'>Add Bank</Link>
                 </div>
         </form>
             </div>

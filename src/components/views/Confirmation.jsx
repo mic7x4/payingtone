@@ -1,4 +1,5 @@
 import React from 'react'
+import {useHistory} from 'react-router-dom'
 import './Confirmation.css'
 import Confirm from '../../assets/images/confirm.svg'
 import Decline from '../../assets/images/declined.svg'
@@ -7,6 +8,7 @@ import GreenNav from './GreenNav'
 import AfterNavSection from './AfterNavSection'
 
 function Confirmation() {
+    const history = useHistory();
     return (
         <>
         <GreenNav/>
@@ -30,13 +32,13 @@ function Confirmation() {
                              quisquam eum corporis at quod odit ullam vero quo recusandae aspernatur, 
                         </p>
                         <div className="confirmation__btn">
-                            <button className="confirm">
+                            <button onClick={()=>history.push('/otp')} className="confirm">
                                 <span>
                                     <img className="conf__holder" src={Confirm} alt="" />
                                 </span>
                                 <p className='ml__4'>Confirm</p>
                             </button>
-                            <button className="confirm">
+                            <button onClick={()=>history.push('/confirmation')} className="confirm">
                                 <span>
                                     <img className="conf__holder" src={Decline} alt="" />
                                 </span>

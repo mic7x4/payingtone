@@ -1,0 +1,11 @@
+.my__insurances {
+  z-index: 100;
+  flex: 4;
+  padding: 20px;
+  height: 100vh;
+}
+.myinsurance__table__holder {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+}

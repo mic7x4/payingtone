@@ -1,0 +1,75 @@
+.manage__insurance {
+  z-index: 100;
+  flex: 4;
+  padding: 20px;
+  height: 100vh;
+}
+.insurance__labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.insurance__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+.insurance__label:hover {
+  text-decoration: none !important;
+}
+.insurancelabel__img {
+  background: rgba(9, 83, 94, 0.3);
+  border-radius: 8px;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.motar__text {
+  text-decoration: none;
+  color: #333;
+  margin-left: 4px;
+}
+.motar__text h2 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.motar__text p {
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #9f9b9b;
+}
+.insurancelabel__img {
+  color: #09535e;
+}
+/* Insurance Table */
+.manageInsurance__table {
+  margin-top: 27px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.renew_insuranceBtn {
+  background: rgba(9, 83, 94, 0.51);
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px 30px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}

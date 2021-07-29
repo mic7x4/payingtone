@@ -21,6 +21,7 @@ import Fridge from './components/views/Fridge';
 import CompanyDetails from './components/views/CompanyDetails';
 import CompanyAdmin from './components/views/CompanyAdmin';
 import DashboardHome from './components/dashboard/DashboardHome';
+// import ManageInsurance from './components/dashboard/ManageInsurance/ManageInsurance';
 
 function App() {
   
@@ -47,8 +48,9 @@ function App() {
       <Route exact path='/signature2' component={Signatarry2}/>
       <Route exact path='/details' component={BankDetails}/>
       <Route exact path='/fridge' component={Fridge}/>
-      <Route exact path='/dashboard' component={DashboardHome}/>
+      <Route path='/dashboard' component={DashboardHome}/>
      </BrowserRouter>
+     
   );
 }
 

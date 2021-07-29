@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from 'react-router';
 import './MotorInsurance.css'
 import Footer from '../Footer'
 import TextField from '@material-ui/core/TextField';
@@ -6,6 +7,7 @@ import GreenNav from './GreenNav'
 import AfterNavSection from './AfterNavSection';
 
 function MotorInsurance() {
+    const history =  useHistory();
 
     return (
         <div className='hidden'>
@@ -111,7 +113,7 @@ function MotorInsurance() {
                     </div>
                 </div>
                 <div className="ins__flex">
-                    <button className='insurance__next'>Next</button>
+                    <button onClick={() => history.push('/register')}  className='insurance__next'>Next</button>
                 </div>
             </div>
         </section>

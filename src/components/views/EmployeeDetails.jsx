@@ -1,7 +1,9 @@
 import React,{Component} from 'react'
+import {Link} from 'react-router-dom'
 import Footer from '../Footer'
 import GreenNav from './GreenNav';
 import AfterNavSection from './AfterNavSection'
+
 
 
 export default class EmployeeDetails extends Component {
@@ -20,7 +22,7 @@ export default class EmployeeDetails extends Component {
          <>
          <GreenNav/>
             <AfterNavSection
-                heading='Employment Details'
+                heading='Employer Details'
                 paragraph='Complete this form with required employment information'
             />
             <div className="signup__form">
@@ -77,7 +79,7 @@ export default class EmployeeDetails extends Component {
                 placeholder='Years of service' />
             </div>
                 <div className="form__group">
-                  <button onClick={this.continue} className='continue__btn'>Submit</button>
+                  <Link  to='/details' className='continue__btn'>Submit</Link>
                 </div>
         </form>
             </div>

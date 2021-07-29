@@ -4,8 +4,10 @@ import FooterLogo from '../../assets/images/footerlogo.png'
 import Download from '../../assets/images/download.png'
 import Footer from '../Footer'
 import GreenNav from './GreenNav'
+import { useHistory } from 'react-router-dom'
 
 function BankConfirmation() {
+    const history = useHistory()
     return (
         <div>
             <GreenNav/>
@@ -26,7 +28,7 @@ function BankConfirmation() {
                             <img src={FooterLogo} className='bank__logo' alt="" />
                         </div>
                     </div>
-                <button className='dashboard__btn'>Go to dashboard</button>
+                <button onClick={()=>history.push('/dashboard/profile')} className='dashboard__btn'>Go to dashboard</button>
                 </div>
             </section>
             <section className="download__letter ">

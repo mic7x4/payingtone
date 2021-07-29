@@ -78,6 +78,8 @@
   line-height: 28px;
 }
 .insurance__next {
+  z-index: 100;
+  cursor: pointer;
   width: 179px;
   height: 59px;
   font-family: "Roboto";
@@ -89,7 +91,6 @@
   background: rgba(9, 83, 94, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 15px;
-  cursor: pointer;
 }
 .insurance__btn {
   width: 455px;

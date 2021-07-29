@@ -3,8 +3,10 @@ import './PaymentPlan.css'
 import Footer from '../Footer'
 import GreenNav from './GreenNav'
 import AfterNavSection from './AfterNavSection'
+import {useHistory} from 'react-router-dom'
 
 function PaymentPlan() {
+    const history = useHistory();
     return (
         <div>
             <GreenNav/>
@@ -23,7 +25,7 @@ function PaymentPlan() {
                             <div className="plan__content">
                                 <h1>100,000 Rwf</h1>
                                 <p>per basic plan in a year</p>
-                                <button className="plan__btn">Choose plan</button>
+                                <button onClick={()=> history.push('/method')} className="plan__btn">Choose plan</button>
                             </div>
                         </div>
                         <div className="plan__card">
@@ -33,7 +35,7 @@ function PaymentPlan() {
                             <div className="plan__content">
                                 <h1>350,000 Rwf</h1>
                                 <p>per medium plan in a year</p>
-                                <button className="plan__btn">Choose plan</button>
+                                <button onClick={()=> history.push('/method')} className="plan__btn">Choose plan</button>
                             </div>
                         </div>
                         <div className="plan__card">
@@ -43,7 +45,7 @@ function PaymentPlan() {
                             <div className="plan__content">
                                 <h1>100,000 Rwf</h1>
                                 <p>per basic plan in a year</p>
-                                <button className="plan__btn">Choose plan</button>
+                                <button onClick={()=> history.push('/method')} className="plan__btn">Choose plan</button>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,48 @@
+.bank__reports {
+  flex: 4;
+  z-index: 100;
+  height: 100vh;
+  padding: 20px;
+}
+.reports__header {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__leftbtn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.report__header1 {
+  text-decoration: none;
+  cursor: pointer;
+  color: #09535e !important;
+  border-radius: 10px 10px 0px 0px;
+  border: 1px solid rgba(9, 83, 94, 0.92);
+  box-sizing: border-box;
+  border-radius: 10px 10px 0px 0px;
+  display: block;
+  margin-right: 10px !important;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+.report__header1:hover {
+  text-decoration: none !important;
+}
+.report__header1.active {
+  background: rgba(9, 83, 94, 0.92);
+  border-radius: 10px 10px 0px 0px;
+  color: #fff !important;
+}
+.headear__leftPrint {
+  color: #09535e;
+  font-size: large;
+}
+
+.report__table {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 0 20px;
+}

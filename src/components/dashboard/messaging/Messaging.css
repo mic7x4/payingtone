@@ -1,0 +1,156 @@
+.user__inbox {
+  z-index: 100;
+  flex: 4;
+  padding: 20px;
+  height: 100vh;
+}
+.conversation__wrapper {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: 510px;
+  padding: 20px;
+  position: relative;
+
+}
+.offers {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: 510px;
+}
+.message_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.logo__text {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+}
+.message__logo {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message__logo img {
+  width: 60%;
+  height: 60%;
+}
+.text__message p {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-style: 10px;
+  line-height: 23px;
+  color: #213145;
+}
+.received__messages {
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 0px 15px 15px 15px;
+  padding: 20px;
+  margin: 20px 0;
+  width: 300px;
+  font-family: "Poppins";
+  font-size: 12px;
+  line-height: 20px;
+  color: #363636;
+}
+.all__replies {
+  background: rgba(36, 130, 144, 0.88);
+  border-radius: 0px 15px 15px 15px;
+  padding: 20px;
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  width: 300px;
+  margin-left: 130px;
+  margin-bottom: 10px;
+}
+.chat__input {
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  background: rgba(255, 255, 255, 0.33);
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+}
+.input__chat {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  outline: none;
+  border: none;
+}
+.send__btn {
+  color: #278d9c;
+  cursor: pointer;
+}
+.offers__messages__wrapper {
+  margin-top: 30px;
+}
+/* Message__offer */
+.offers {
+  padding: 20px;
+}
+.offers__messages__wrapper {
+  overflow-y: scroll;
+  height: 500px;
+}
+.offers__messages__wrapper::-webkit-scrollbar {
+  display: none;
+}
+.offers__head {
+  text-align: right;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 20px;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-style: 10px;
+  line-height: 23px;
+  color: #213145;
+}
+.messaging__holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+}
+.offer__item__text {
+  background: rgba(196, 196, 196, 0.46);
+  border-radius: 16px;
+  padding: 10px 20px;
+}
+.offer__item__text h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000000;
+}
+.offer__item__text p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #757575;
+}
+.offer__item__p {
+  width: 350px;
+}

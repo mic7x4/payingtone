@@ -5,13 +5,12 @@ import GreenNav from './GreenNav'
 import Signatarry from './Signatarry';
 
 function CompanyAdmin() {
-
     const [show,setShow] = useState(false);
 
     const submit = (e)=>{
         e.preventDefault();
     }
-    console.log(show)
+    
     return (
         <>
           <GreenNav/>

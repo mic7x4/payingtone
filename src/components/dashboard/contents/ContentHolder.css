@@ -298,13 +298,12 @@
 .day {
   font-family: "Poppins";
   font-weight: 900;
-  font-size: 30px;
+  font-size: 1.4rem;
   line-height: 30px;
   color: #000000;
 }
 .month__payment h4 {
   font-family: "Poppins";
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;

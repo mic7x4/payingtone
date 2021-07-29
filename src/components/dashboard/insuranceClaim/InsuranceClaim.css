@@ -1,0 +1,16 @@
+.insurance__claim {
+  z-index: 100;
+  flex: 4;
+  padding: 20px;
+  height: 100vh;
+}
+.MuiStepper-vertical.transparent {
+    background-color: transparent;
+}
+.claim__stepper__holder {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+.MuiStepIcon-active {
+    color:#09535E !important;
+}
