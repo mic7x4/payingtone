@@ -1,21 +1,41 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Stepper from '@material-ui/core/Stepper';
-import Step from '@material-ui/core/Step';
-import StepLabel from '@material-ui/core/StepLabel';
-import StepContent from '@material-ui/core/StepContent';
-import Button from '@material-ui/core/Button';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Stepper from "@material-ui/core/Stepper";
+import Step from "@material-ui/core/Step";
+import StepLabel from "@material-ui/core/StepLabel";
+import StepContent from "@material-ui/core/StepContent";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
+import InsuranceClaimForm from "./InsuranceClaimForm";
+import PoliceClaimForm from "./PoliceClaimForm";
+import GarageQuote from "./GarageQuote";
+import Reassessment from "./Reassessment";
+import InsuranceConfirmation from "./InsuranceConfirmation";
+import Receipt from "./Receipt";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%',
-    background:'transparent'
+    width: "100%",
+    background: "transparent",
   },
   button: {
-    marginTop: theme.spacing(1), 
-    marginRight: theme.spacing(1),
+    "&:hover": {
+      background: "rgba(9, 83, 94, 0.88)",
+    },
+    background: "rgba(9, 83, 94, 0.88)",
+    borderRadius: "12px",
+    width: "100%",
+    padding: "10px",
+    outline: "none",
+    border: "none",
+    fontFamily: "Poppins",
+    fontStyle: "normal",
+    fontWeight: "500",
+    fontSize: "16px",
+    lineHeight: "24px",
+    color: "#ffffff",
+    cursor: "pointer",
+    marginTop: "20px",
   },
   actionsContainer: {
     marginBottom: theme.spacing(2),
@@ -26,24 +46,23 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ['','', '', ''];
+  return ["", "", "", "", "", "", ""];
 }
 
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return `For each ad campaign that you create, you can control how much
-              you're willing to spend on clicks and conversions, which networks
-              and geographical locations you want your ads to show on, and more.`;
+      return <Receipt />;
     case 1:
-      return 'An ad group contains one or more ads which target a shared set of keywords.';
+      return <PoliceClaimForm />;
     case 2:
-      return `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`;
-    default:
-      return 'Unknown step';
+      return <GarageQuote />;
+    case 3:
+      return <InsuranceClaimForm />;
+    case 4:
+      return <Reassessment />;
+    case 5:
+      return <InsuranceConfirmation />;
   }
 }
 
@@ -56,38 +75,24 @@ export default function VerticalLinearStepper() {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
 
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
-  const handleReset = () => {
-    setActiveStep(0);
-  };
-
   return (
-    <div>
-      <Stepper  className='transparent'  activeStep={activeStep} orientation="vertical">
+    <div className="this__is__it">
+      <Stepper
+        className="transparent"
+        activeStep={activeStep}
+        orientation="vertical"
+      >
         {steps.map((label, index) => (
           <Step key={label}>
             <StepLabel>{label}</StepLabel>
             <StepContent>
               <Typography>{getStepContent(index)}</Typography>
-              <div className={classes.actionsContainer}>
+              <div>
                 <div>
-                  <Button
-                    disabled={activeStep === 0}
-                    onClick={handleBack}
-                    className={classes.button}
-                  >
-                    Back
-                  </Button>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={handleNext}
-                    className={classes.button}
-                  >
-                    {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+                  <Button onClick={handleNext} className={classes.button}>
+                    {activeStep === steps.length - 1
+                      ? "Finish"
+                      : "Submit Claim"}
                   </Button>
                 </div>
               </div>
@@ -95,14 +100,6 @@ export default function VerticalLinearStepper() {
           </Step>
         ))}
       </Stepper>
-      {activeStep === steps.length && (
-        <Paper square elevation={0} className={classes.resetContainer}>
-          <Typography>All steps completed - you&apos;re finished</Typography>
-          <Button onClick={handleReset} className={classes.button}>
-            Reset
-          </Button>
-        </Paper>
-      )}
     </div>
   );
 }

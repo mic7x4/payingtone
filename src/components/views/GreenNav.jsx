@@ -3,6 +3,7 @@ import {Link } from 'react-router-dom'
 import GreenLogo from '../../assets/images/greenlogo.svg'
 
 function GreenNav() {
+    
     return (
           <div className="motorimsurance__bg">
                 <div className="background__ins"></div>

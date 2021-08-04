@@ -5,12 +5,220 @@
   height: 100vh;
 }
 .MuiStepper-vertical.transparent {
-    background-color: transparent;
+  background-color: transparent;
 }
 .claim__stepper__holder {
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
+  background: rgba(255, 255, 255, 0.342);
+  border-radius: 10px;
+  width: 1029px;
+  margin-top: 30px;
+  color: #000000;
 }
 .MuiStepIcon-active {
-    color:#09535E !important;
+  color: #09535e !important;
+}
+/* InsuranceClaim Form */
+
+.insurance__header {
+  border-left: 4px solid #09535e;
+}
+.insurance__header p {
+  margin-left: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.insurance__inputs {
+  display: flex;
+  justify-content: space-between;
+}
+.insurance__group {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.342);
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 7px;
+  margin: 10px 0;
+}
+
+.insurance__control {
+  width: 100%;
+  padding: 15px 10px;
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.342);
+  border: 1px solid #e5e5e5;
+  border-radius: 7px;
+}
+.insurance__textarea {
+  width: 100%;
+  height: 200px;
+}
+.textarea__insurance {
+  background: none;
+  outline: none;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(255, 255, 255, 0.342);
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: #9f9b9b;
+}
+.insurance__next__button {
+  margin-top: 20px;
+}
+.submit__clain {
+  background: rgba(9, 83, 94, 0.88);
+  border-radius: 12px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* Police Claim Form */
+.police__claim__form {
+  display: flex;
+  justify-content: space-between;
+}
+.police__upload {
+  background: rgba(255, 255, 255, 0.342);
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 444px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.police__form__upload {
+  padding: 100%;
+  cursor: pointer;
+}
+.upload__image {
+  width: 100%;
+}
+.police__form__upload {
+  display: none;
+}
+.police__chat__side {
+  background: rgba(255, 255, 255, 0.342);
+  padding: 20px;
+  width: 380px;
+  border: 1px solid rgba(231, 231, 231, 0.49);
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+}
+.chat__image {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #09535e;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+.police__text p {
+  background: whitesmoke;
+  border-radius: 0px 15px 15px 15px;
+  width: 305px;
+  padding: 10px;
+}
+.police__claim__input {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.police__send {
+  background: rgba(9, 83, 94, 0.88);
+  border-radius: 14px;
+  color: #fff;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+.insurance__header {
+  margin: 20px 0;
+}
+.input__claim {
+  background: #fff;
+  width: 240px;
+  margin-right: 20px;
+  padding: 7px;
+  border-radius: 17px;
+  border: 1px solid #09535e;
+  outline: none;
+  font-size: 10px;
+  line-height: 15px;
+  font-family: Poppins;
+  font-weight: 700;
+  color: #565656;
+}
+/* Reassesment Note */
+.reassesment__left {
+  height: 499px;
+  width: 444px;
+
+  background: rgba(255, 255, 255, 0.342);
+
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.assessment__logo {
+  height: 54px;
+  width: 54px;
+  border: 1px solid #09535e;
+  border-radius: 50%;
+}
+
+.reassessment__note {
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+.reassessment__note p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.document,
+.reassesment__left__p {
+  padding: 20px;
+  margin: 40px;
+}
+.all__greens {
+  color: #09535e;
+}
+.document {
+  color: #000000;
+  background: whitesmoke;
+
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
 }
