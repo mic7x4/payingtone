@@ -4,6 +4,7 @@ import Modal from "react-modal";
 import { useState } from "react";
 import AddContributor from "./AddContributor";
 import RemoveContributor from "./RemoveContributor";
+import { Link } from "react-router-dom";
 
 Modal.setAppElement("#root");
 
@@ -18,16 +19,14 @@ function CollectiveCart() {
       <div className="cart__navbar">
         <div className="cart__navbar__left">
           <div className="cart__individual">
-            <select name="" id="" className="cart__select1">
-              <option value="individual">Individual</option>
-              <option value="collection">Collection</option>
-            </select>
+            <Link to="/dashboard/cart" name="" id="" className="cart__select1">
+              Individual
+            </Link>
           </div>
           <div className="cart__individual">
-            <select name="" id="" className="cart__select1 active">
-              <option value="individual">Individual</option>
-              <option value="collection">Collection</option>
-            </select>
+            <Link to='/dashboard/collective' name="" id="" className="cart__select1 active">
+              Collection
+            </Link>
           </div>
         </div>
         <div className="add__collective__holder">

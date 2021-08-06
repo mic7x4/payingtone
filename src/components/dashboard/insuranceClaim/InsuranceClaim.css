@@ -3,9 +3,16 @@
   flex: 4;
   padding: 20px;
   height: 100vh;
+  overflow-y: scroll;
+}
+.insurance__claim::-webkit-scrollbar {
+  display: none;
 }
 .MuiStepper-vertical.transparent {
   background-color: transparent;
+}
+.MuiStepIcon-completed {
+  color: #fff !important;
 }
 .claim__stepper__holder {
   background: rgba(255, 255, 255, 0.342);

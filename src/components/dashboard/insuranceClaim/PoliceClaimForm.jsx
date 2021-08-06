@@ -7,7 +7,7 @@ function PoliceClaimForm() {
   return (
     <div className="police__claim__holder">
       <div className="insurance__header">
-        <p>Insurance Claim Form</p>
+        <p>Police Claim Form</p>
       </div>
       <div className="police__claim__form">
         <div className="police__upload">
@@ -28,7 +28,7 @@ function PoliceClaimForm() {
           </div>
           <div className="police__claim__input">
             <input type="text" className="input__claim" />
-            <span className='police__send'>
+            <span className="police__send">
               <Send />
             </span>
           </div>

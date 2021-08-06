@@ -116,6 +116,7 @@
   display: inline-block;
   outline: none;
   background: none;
+  color: #09535e;
 }
 .cart__select1 option {
   padding: 30px;

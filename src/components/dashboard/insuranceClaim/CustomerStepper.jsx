@@ -12,6 +12,7 @@ import GarageQuote from "./GarageQuote";
 import Reassessment from "./Reassessment";
 import InsuranceConfirmation from "./InsuranceConfirmation";
 import Receipt from "./Receipt";
+import Cart from '../cart/Cart'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -46,23 +47,25 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ["", "", "", "", "", "", ""];
+  return ["", "", "", "", "", ""];
 }
 
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return <Receipt />;
+      return <InsuranceClaimForm />;
     case 1:
       return <PoliceClaimForm />;
     case 2:
       return <GarageQuote />;
     case 3:
-      return <InsuranceClaimForm />;
-    case 4:
       return <Reassessment />;
-    case 5:
+    case 4:
       return <InsuranceConfirmation />;
+    case 5:
+      return <Receipt />;
+    default:
+      return "Unknown step";
   }
 }
 
@@ -91,7 +94,7 @@ export default function VerticalLinearStepper() {
                 <div>
                   <Button onClick={handleNext} className={classes.button}>
                     {activeStep === steps.length - 1
-                      ? "Finish"
+                      ? "Submit"
                       : "Submit Claim"}
                   </Button>
                 </div>

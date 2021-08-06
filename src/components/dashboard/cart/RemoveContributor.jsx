@@ -12,7 +12,6 @@ function RemoveContributor({ names, setRemoveModalIsOpen, removeModalIsOpen }) {
           background: "rgba(34, 34, 34, 0.900)",
           zIndex: "200",
           overflow: "hidden",
-          width: "500px",
         },
       }}
     >

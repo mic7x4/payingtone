@@ -41,9 +41,9 @@ function SideNav() {
             <Link to="/dashboard/transaction" className="sidebar__listItem">
               <CheckBox className="sidebar__green" /> Transactions
             </Link>
-            <li className="sidebar__listItem">
+            <Link to="/dashboard/insuranceClaim" className="sidebar__listItem">
               <InsertDriveFile className="sidebar__green" /> Make a claim
-            </li>
+            </Link>
             <Link to="/dashboard/messaging" className="sidebar__listItem">
               <Textsms className="sidebar__green" /> Message & offers
             </Link>

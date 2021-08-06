@@ -21,6 +21,7 @@ import Fridge from './components/views/Fridge';
 import CompanyDetails from './components/views/CompanyDetails';
 import CompanyAdmin from './components/views/CompanyAdmin';
 import DashboardHome from './components/dashboard/DashboardHome';
+import Products from './components/products/Products';
 // import ManageInsurance from './components/dashboard/ManageInsurance/ManageInsurance';
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
       <Route exact path='/details' component={BankDetails}/>
       <Route exact path='/fridge' component={Fridge}/>
       <Route path='/dashboard' component={DashboardHome}/>
+      <Route path='/products' component={Products}/>
      </BrowserRouter>
      
   );
